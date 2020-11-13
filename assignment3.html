@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<div style="text-align:center"> 
+<h2> Awesome Online videos 
+
+<img src="aov.jpg" alt="Awesome Online videos" style="width:100px;height:50px;"></h2>
+</div>
+<div style="text-align:center"> 
+  
+
+  <video id="video1" width="420">
+    <source src="mov_bbb.mp4" type="video/mp4">
+	<source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+<br><br>
+<button onclick="play()">Play</button> 
+  <button onclick="pause()">Pause</button>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function play() { 
+    myVideo.play(); 
+} 
+function pause() {
+myVideo.pause(); 
+} 
+</script>
+</body> 
+</html>
